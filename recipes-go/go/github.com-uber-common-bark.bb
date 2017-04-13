@@ -12,5 +12,7 @@ LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=b95027a144fd75630412e36b
 FILES_${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS +="\
-github.com-Sirupsen-logrus\
+    github.com-sirupsen-logrus \
+    github.com-cactus-go-statsd-client \
+    github.com-stretchr-testify \
 "
