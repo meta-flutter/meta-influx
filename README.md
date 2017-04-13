@@ -1,5 +1,5 @@
 This README file contains information on the contents of the
-meta-cx1-influx layer.
+meta-influx layer.
 
 Please see the corresponding sections below for details.
 
@@ -24,7 +24,7 @@ This layer depends on:
 Patches
 =======
 
-Please submit any patches against the meta-cx1-influx layer to the
+Please submit any patches against the meta-influx layer to the
 xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
 
 Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
@@ -33,32 +33,32 @@ Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
 Table of Contents
 =================
 
-  I. Adding the meta-cx1-influx layer to your build
+  I. Adding the meta-influx layer to your build
  II. Misc
 
 
-I. Adding the meta-cx1-influx layer to your build
+I. Adding the meta-influx layer to your build
 =================================================
 
---- replace with specific instructions for the meta-cx1-influx layer ---
+--- replace with specific instructions for the meta-influx layer ---
 
 In order to use this layer, you need to make the build system aware of
 it.
 
-Assuming the meta-cx1-influx layer exists at the top-level of your
+Assuming the meta-influx layer exists at the top-level of your
 yocto build tree, you can add it to the build system by adding the
-location of the meta-cx1-influx layer to bblayers.conf, along with any
+location of the meta-influx layer to bblayers.conf, along with any
 other layers needed. e.g.:
 
   BBLAYERS ?= " \
     /path/to/yocto/meta \
     /path/to/yocto/meta-poky \
     /path/to/yocto/meta-yocto-bsp \
-    /path/to/yocto/meta-meta-cx1-influx \
+    /path/to/yocto/meta-meta-influx \
     "
 
 
 II. Misc
 ========
 
---- replace with specific information about the meta-cx1-influx layer ---
+--- replace with specific information about the meta-influx layer ---
