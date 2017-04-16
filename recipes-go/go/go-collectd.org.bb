@@ -13,5 +13,5 @@ FILES_${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS+="\
     github.com-golang-protobuf \
-    google-golang.org-grpc-go \
+    grpc-go \
 "
