@@ -9,15 +9,20 @@ GO_IMPORT = "golang.org/x"
 
 PROVIDES += "golang.org-x-crypto"
 PROVIDES += "golang.org-x-text"
+PROVIDES += "golang.org-x-tools"
+
 
 inherit go
 
 SRC_URI = "\
-	git://github.com/golang/net.git;protocol=https;name=net;destsuffix=${PN}-${PV}/src/golang.org/x/net \
-	git://github.com/golang/crypto.git;protocol=https;name=crypto;destsuffix=${PN}-${PV}/src/golang.org/x/crypto \
-	git://github.com/golang/text.git;protocol=https;name=text;destsuffix=${PN}-${PV}/src/golang.org/x/text \
-	"
+    git://github.com/golang/net.git;protocol=https;name=net;destsuffix=${PN}-${PV}/src/golang.org/x/net \
+    git://github.com/golang/crypto.git;protocol=https;name=crypto;destsuffix=${PN}-${PV}/src/golang.org/x/crypto \
+    git://github.com/golang/text.git;protocol=https;name=text;destsuffix=${PN}-${PV}/src/golang.org/x/text \   
+    git://github.com/golang/tools.git;protocol=https;name=tools;destsuffix=${PN}-${PV}/src/golang.org/x/tools \
+    "
 
-SRCREV_net = "07b51741c1d6423d4a6abab1c49940ec09cb1aaf"
-SRCREV_crypto = "9477e0b78b9ac3d0b03822fd95422e2fe07627cd"
-SRCREV_text = "d69c40b4be55797923cec7457fac7a244d91a9b6"
+
+SRCREV_net = "5602c733f70afc6dcec6766be0d5034d4c4f14de"
+SRCREV_crypto = "cbc3d0884eac986df6e78a039b8792e869bff863"
+SRCREV_text = "f4b4367115ec2de254587813edaa901bc1c723a8"
+SRCREV_tools = "663269851cdddc898f963782f74ea574bcd5c814"
