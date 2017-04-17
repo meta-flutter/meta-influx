@@ -11,6 +11,4 @@ LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=808b70f61299cac3989a0b3f
 
 FILES_${PN} += "${GOBIN_FINAL}/*"
 
-do_install_append_class-target() {
-    find "${D}${GOROOT_FINAL}" \( -name \*.sh -o -name \*.bash \) -delete
-}
+RDEPENDS_${PN}-staticdev += "bash"
