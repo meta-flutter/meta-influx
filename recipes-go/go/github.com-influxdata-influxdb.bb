@@ -36,3 +36,7 @@ DEPENDS +="\
     github.com-uber-go-zap\
     golang.org-x-crypto\
 "
+
+RDEPENDS_${PN}-staticdev += "bash \
+                             python \
+                             "
