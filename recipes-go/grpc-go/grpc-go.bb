@@ -10,6 +10,10 @@ GO_IMPORT = "google.golang.org"
 PROVIDES += "golang.org-genproto"
 
 
+inherit go
+
+
+
 DEPENDS = "\
 	github.com-golang-glog \
 	github.com-golang-protobuf \
@@ -17,12 +21,14 @@ DEPENDS = "\
 	golang.org-x-oauth2 \
 	"
 
-SRC_URI = "git://github.com/grpc/grpc-go.git;protocol=https;name=grpc;destsuffix=${PN}-${PV}/src/${GO_IMPORT}/grpc \
-           git://github.com/google/go-genproto.git;protocol=https;name=genproto;destsuffix=${PN}-${PV}/src/${GO_IMPORT}/genproto "
+FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+
+SRC_URI = "git://github.com/grpc/grpc-go.git;protocol=https;name=grpc;destsuffix=${PN}-${PV}/src/google.golang.org/grpc \
+           git://github.com/google/go-genproto.git;protocol=https;name=genproto;destsuffix=${PN}-${PV}/src/google.golang.org/genproto \
+           file://annotations.patch;name=genproto;destsuffix=${PN}-${PV}/src/google.golang.org/genproto"
 
 
 GO_INSTALL = "\
-    ${GO_IMPORT}/grpc \
     ${GO_IMPORT}/grpc/codes/... \
     ${GO_IMPORT}/grpc/credentials/... \
     ${GO_IMPORT}/grpc/grpclog/... \
@@ -31,11 +37,12 @@ GO_INSTALL = "\
     ${GO_IMPORT}/grpc/naming/... \
     ${GO_IMPORT}/grpc/peer/... \
     ${GO_IMPORT}/grpc/transport/... \
-    ${GO_IMPORT}/genproto/... \
+    ${GO_IMPORT}/genproto/googleapis/... \
+    ${GO_IMPORT}/genproto/protobuf/... \
 "
-
-inherit go
-
 
 SRCREV_grpc = "8a6eb0f6e96a246c7c655b0207b62255042f6fbd"
 SRCREV_genproto= "411e09b969b1170a9f0c467558eb4c4c110d9c77"
+
+
+RDEPENDS_${PN}-staticdev += "bash"
