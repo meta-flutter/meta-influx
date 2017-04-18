@@ -1,0 +1,12 @@
+DESCRIPTION = "###REPO###"
+
+GO_IMPORT = "###REPO###"
+
+inherit go
+
+SRC_URI = "git://###REPO###;protocol=https;destsuffix=${PN}-${PV}/src/${GO_IMPORT}"
+SRCREV = "###COMMIT###" 
+LICENSE = "###LIC###"
+LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/###LICFILE###;md5=###LICMD5###"
+
+FILES_${PN} += "${GOBIN_FINAL}/*"
