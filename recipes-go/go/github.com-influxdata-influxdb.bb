@@ -37,6 +37,7 @@ DEPENDS +="\
     golang.org-x-crypto\
 "
 
-RDEPENDS_${PN}-staticdev += "bash \
+RDEPENDS_${PN}-staticdev += "\
+                             bash \
                              python \
                              "
