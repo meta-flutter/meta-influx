@@ -82,7 +82,7 @@ def processLines(file):
                 recipe_text=template
                 with open(outdir+"/"+bbfilename, "w") as f:
                     recipe_text=recipe_text.replace('###REPO###',repo)
-                    recipe_text=recipe_text.replace('###COMMIT###',commit)
+                    recipe_text=recipe_text.replace('###COMMIT###',head)
                     recipe_text=recipe_text.replace('###LIC###',lic_string)
                     recipe_text=recipe_text.replace('###LICFILE###',license_file)
                     recipe_text=recipe_text.replace('###LICMD5###',md5sum)
