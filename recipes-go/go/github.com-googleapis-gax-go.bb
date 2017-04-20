@@ -11,3 +11,7 @@ LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=0dd48ae8103725bd7b401261
 
 FILES_${PN} += "${GOBIN_FINAL}/*"
 
+DEPENDS+="\
+    golang.org-x-net \
+    github.com-golang-protobuf \
+"
