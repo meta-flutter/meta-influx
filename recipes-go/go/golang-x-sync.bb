@@ -10,3 +10,7 @@ LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=5d4950ecb7b26d2c5e4e7b4e0dd74707"
 
 FILES_${PN} += "${GOBIN_FINAL}/*"
+
+DEPENDS += "\
+    golang.org-x-net \
+"
