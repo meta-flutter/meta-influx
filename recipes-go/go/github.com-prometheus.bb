@@ -19,4 +19,8 @@ FILES_${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS +="\
             github.com-julienschmidt-httprouter \
+            github.com-beorn7-perks \
+            github.com-matttproud-golang \
+            github.com-prometheus-client-model \
+            github.com-prometheus-procfs \
             "

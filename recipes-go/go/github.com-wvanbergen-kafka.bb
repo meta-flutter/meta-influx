@@ -13,4 +13,5 @@ FILES_${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS+="\
     github.com-shopify-sarama \
+    github.com-wvanbergen-kazoo-go\
 "

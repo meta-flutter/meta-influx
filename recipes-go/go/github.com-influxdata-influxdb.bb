@@ -35,6 +35,7 @@ DEPENDS +="\
     github.com-uber-go-atomic\
     github.com-uber-go-zap\
     golang.org-x-crypto\
+    github.com-rakyll-statik\
 "
 
 RDEPENDS_${PN}-staticdev += "\
