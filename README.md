@@ -9,33 +9,25 @@ Dependencies
 
 This layer depends on:
 
-  URI: git://git.openembedded.org/bitbake
+  URI: git://github.com/mem/oe-meta-go.git
   branch: master
 
-  URI: git://git.openembedded.org/openembedded-core
-  layers: meta
-  branch: master
-
-  URI: git://git.yoctoproject.org/xxxx
-  layers: xxxx
+  URI: git://github.com/imyller/meta-nodejs.git
   branch: master
 
 
 Patches
 =======
 
-Please submit any patches against the meta-influx layer to the
-xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+For bugreports please use Github issues. For bugfixes/patches use Github pullrequests.
 
 
 Table of Contents
 =================
 
-  I. Adding the meta-influx layer to your build
- II. Misc
-
+  I. influxdb and its depends as go recipes
+ II. telegraf and its depends as go recipes
+III. grafana
 
 I. Adding the meta-influx layer to your build
 =================================================
@@ -54,11 +46,7 @@ other layers needed. e.g.:
     /path/to/yocto/meta \
     /path/to/yocto/meta-poky \
     /path/to/yocto/meta-yocto-bsp \
-    /path/to/yocto/meta-meta-influx \
+    /path/to/yocto/meta-influx \
     "
 
 
-II. Misc
-========
-
---- replace with specific information about the meta-influx layer ---
