@@ -1,7 +1,7 @@
 This README file contains information on the contents of the
 meta-influx layer.
 
-Please see the corresponding sections below for details.
+The main goal of meta-influx is to install influxdb, telegraf and grafana on your system.
 
 
 Dependencies
@@ -9,38 +9,23 @@ Dependencies
 
 This layer depends on:
 
-  URI: git://git.openembedded.org/bitbake
-  branch: master
+  - URI: git://github.com/mem/oe-meta-go.git
+    - branch: master
 
-  URI: git://git.openembedded.org/openembedded-core
-  layers: meta
-  branch: master
-
-  URI: git://git.yoctoproject.org/xxxx
-  layers: xxxx
-  branch: master
+  - URI: git://github.com/imyller/meta-nodejs.git
+    - branch: master
 
 
 Patches
 =======
 
-Please submit any patches against the meta-influx layer to the
-xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+For bugreports please use Github issues and for bugfixes/patches Github pullrequests.
 
 
-Table of Contents
-=================
-
-  I. Adding the meta-influx layer to your build
- II. Misc
 
 
-I. Adding the meta-influx layer to your build
+Adding the meta-influx layer to your build
 =================================================
-
---- replace with specific instructions for the meta-influx layer ---
 
 In order to use this layer, you need to make the build system aware of
 it.
@@ -54,11 +39,14 @@ other layers needed. e.g.:
     /path/to/yocto/meta \
     /path/to/yocto/meta-poky \
     /path/to/yocto/meta-yocto-bsp \
-    /path/to/yocto/meta-meta-influx \
+    /path/to/yocto/meta-go \
+    /path/to/yocto/meta-influx \
     "
 
-
-II. Misc
-========
-
---- replace with specific information about the meta-influx layer ---
+Adding influxdb, telegraf and grafana to your image
+====================================================
+IMAGE_INSTALL += "\
+                    github.com-influxdata-influxdb \
+                    github.com-influxdata-telegraf \
+                    grafana-go \
+                 "
