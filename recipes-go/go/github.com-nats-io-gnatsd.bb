@@ -11,3 +11,6 @@ LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=f0add7a94e4dd1aa93a5a58b
 
 FILES_${PN} += "${GOBIN_FINAL}/*"
 
+RDEPENDS_${PN}-staticdev += "\
+                                bash \
+                             "
