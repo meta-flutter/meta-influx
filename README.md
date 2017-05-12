@@ -50,3 +50,4 @@ IMAGE_INSTALL += "\
                     github.com-influxdata-telegraf \
                     grafana-go \
                  "
+ 
