@@ -1,5 +1,5 @@
 require grafana.inc
-inherit go npm-base
+inherit go
 
 DESCRIPTION = "Grafana Go Backend"
 GO_IMPORT = "${REPO}"
@@ -16,7 +16,6 @@ DEPENDS+= "\
     github.com-siddontang-ledisdb \
     github.com-edsrzf-mmap-go \
     grpc-go \
-    nodejs \
 "
 
 GO_INSTALL = "\
@@ -27,8 +26,4 @@ RDEPENDS_${PN}-staticdev += "\
                              expect \
                             "
                            
-RDEPENDS_${PN} += " nodejs"     
-
-do_install_append() {
-    oe_runnpm install     # Installs dependencies defined in package.json
-}            
+                                 
