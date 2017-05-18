@@ -10,3 +10,7 @@ LICENSE = "PD"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=605b9ee741fb194674b08ff2532e52b1"
 
 FILES_${PN} += "${GOBIN_FINAL}/*"
+
+DEPENDS+="\
+    github.com-yuin-gopher-lua \
+"

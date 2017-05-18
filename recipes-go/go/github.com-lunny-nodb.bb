@@ -15,6 +15,10 @@ DEPENDS+="\
     github.com-siddontang-go-snappy \
     github.com-syndtr-goleveldb \
     github.com-lunny-log \
+    github.com-peterh-liner \
+    github.com-siddontang-ledisdb \
+    github.com-burntsushi-toml \
+    github.com-ugorji-go \   
 "
 RDEPENDS_${PN}-staticdev += "\
                              bash \

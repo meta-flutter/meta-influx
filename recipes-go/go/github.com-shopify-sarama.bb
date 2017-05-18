@@ -18,4 +18,5 @@ DEPENDS+="\
     github.com-klauspost-crc32\
     github.com-pierrec-lz4\
     github.com-rcrowley-go-metrics\
+    github.com-davecgh-go-spew \
     "

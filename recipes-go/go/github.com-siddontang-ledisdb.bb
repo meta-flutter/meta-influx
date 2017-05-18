@@ -21,6 +21,9 @@ DEPENDS+="\
     github.com-siddontang-rdb \
     github.com-syndtr-goleveldb \
     github.com-edsrzf-mmap-go \
+    github.com-peterh-liner \
+    github.com-burntsushi-toml \
+    github.com-ugorji-go \  
 "   
 
 RDEPENDS_${PN}-staticdev += "\
