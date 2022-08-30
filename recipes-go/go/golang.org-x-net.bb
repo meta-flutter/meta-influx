@@ -14,9 +14,9 @@ PROVIDES += "golang.org-x-text"
 inherit go
 
 SRC_URI = "\
-    git://github.com/golang/net.git;protocol=https;branch=master;name=net;destsuffix=${BPN}-${PV}/src/golang.org/x/net \
-    git://github.com/golang/crypto.git;protocol=https;branch=master;name=crypto;destsuffix=${BPN}-${PV}/src/golang.org/x/crypto \
-    git://github.com/golang/text.git;protocol=https;branch=master;name=text;destsuffix=${BPN}-${PV}/src/golang.org/x/text \   
+    git://github.com/golang/net.git;protocol=https;branch=master;name=net \
+    git://github.com/golang/crypto.git;protocol=https;branch=master;name=crypto \
+    git://github.com/golang/text.git;protocol=https;branch=master;name=text \   
     "
     
     
