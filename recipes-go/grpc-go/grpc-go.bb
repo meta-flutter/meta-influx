@@ -40,7 +40,7 @@ DEPENDS = "\
 
 #### FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
-SRC_URI = "git://github.com/grpc/grpc-go.git;protocol=https;branch=main;name=grpc;destsuffix=${BPN}-${PV}/src/${GO_IMPORT_GRPC}     \
+SRC_URI = "git://github.com/grpc/grpc-go.git;protocol=https;branch=master;name=grpc;destsuffix=${BPN}-${PV}/src/${GO_IMPORT_GRPC}     \
            git://github.com/google/go-genproto.git;protocol=https;branch=main;name=genproto;destsuffix=${BPN}-${PV}/src/${GO_IMPORT_GENPROTO} \
            git://github.com/googleapis/gax-go.git;protocol=https;branch=main;name=gaxgo;destsuffix=${BPN}-${PV}/src/${GO_IMPORT_GAX_GO}   \
            git://github.com/golang/oauth2.git;protocol=https;branch=main;name=oauth2;destsuffix=${BPN}-${PV}/src/${GO_IMPORT_OAUTH2}   \ 
