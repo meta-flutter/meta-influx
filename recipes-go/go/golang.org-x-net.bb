@@ -7,17 +7,22 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 GO_IMPORT = "golang.org/x"
 
-PROVIDES += "golang.org-x-crypto"
-PROVIDES += "golang.org-x-text"
-
+PROVIDES += "\
+    golang.org-x-crypto \
+    golang.org-x-text \
+    "
 
 inherit go
 
 SRC_URI = "\
-    git://github.com/golang/net.git;protocol=https;branch=master;name=net \
-    git://github.com/golang/crypto.git;protocol=https;branch=master;name=crypto \
-    git://github.com/golang/text.git;protocol=https;branch=master;name=text \   
+    git://github.com/golang/net.git;protocol=https;branch=master;name=net;destsuffix=${BPN}-${PV}/src/golang.org/x/net \
+    git://github.com/golang/crypto.git;protocol=https;branch=master;name=crypto;destsuffix=${BPN}-${PV}/src/golang.org/x/crypto \
+    git://github.com/golang/text.git;protocol=https;branch=master;name=text;destsuffix=${BPN}-${PV}/src/golang.org/x/text \   
     "
+
+SRCREV_net = "5602c733f70afc6dcec6766be0d5034d4c4f14de"
+SRCREV_crypto = "cbc3d0884eac986df6e78a039b8792e869bff863"
+SRCREV_text = "f4b4367115ec2de254587813edaa901bc1c723a8"
     
     
 GO_INSTALL = "\
@@ -37,8 +42,3 @@ GO_INSTALL = "\
     ${GO_IMPORT}/text/unicode/... \
     ${GO_IMPORT}/text/width/... \
 "
-
-
-SRCREV_net = "5602c733f70afc6dcec6766be0d5034d4c4f14de"
-SRCREV_crypto = "cbc3d0884eac986df6e78a039b8792e869bff863"
-SRCREV_text = "f4b4367115ec2de254587813edaa901bc1c723a8"
