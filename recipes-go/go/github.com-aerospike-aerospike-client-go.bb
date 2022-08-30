@@ -4,7 +4,7 @@ GO_IMPORT = "github.com/aerospike/aerospike-client-go"
 
 inherit go
 
-SRC_URI = "git://github.com/aerospike/aerospike-client-go;protocol=https;branch=master;destsuffix=${PN}-${PV}/src/${GO_IMPORT}"
+SRC_URI = "git://github.com/aerospike/aerospike-client-go;protocol=https;branch=master;destsuffix=${BPN}-${PV}/src/${GO_IMPORT}"
 SRCREV = "95e1ad7791bdbca44707fedbb29be42024900d9c" 
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=4ffbf8936902d1fffb5a954a5dde4eb5"

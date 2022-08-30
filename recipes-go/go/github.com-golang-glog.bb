@@ -10,7 +10,7 @@ GO_IMPORT = "github.com/golang/glog"
 inherit go
 
 SRC_URI = "\
-	git://${GO_IMPORT}.git;protocol=https;branch=master;destsuffix=${PN}-${PV}/src/${GO_IMPORT} \
+	git://${GO_IMPORT}.git;protocol=https;branch=master;destsuffix=${BPN}-${PV}/src/${GO_IMPORT} \
 	"
 
 SRCREV = "23def4e6c14b4da8ac2ed8007337bc5eb5007998"

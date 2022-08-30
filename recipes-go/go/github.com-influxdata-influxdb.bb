@@ -4,7 +4,7 @@ GO_IMPORT = "github.com/influxdata/influxdb"
 
 inherit go
 
-SRC_URI = "git://github.com/influxdata/influxdb;protocol=https;branch=master;destsuffix=${PN}-${PV}/src/${GO_IMPORT}"
+SRC_URI = "git://github.com/influxdata/influxdb;protocol=https;branch=master;destsuffix=${BPN}-${PV}/src/${GO_IMPORT}"
 SRCREV = "9d83e4626d2f190bbd421baea1673e666e759221"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=ba8146ad9cc2a128209983265136e06a"

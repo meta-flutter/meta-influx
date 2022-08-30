@@ -4,8 +4,8 @@ GO_IMPORT = "github.com/prometheus"
 
 inherit go
 
-SRC_URI = "git://github.com/prometheus/client_golang;protocol=https;branch=master;name=client_golang;destsuffix=${PN}-${PV}/src/${GO_IMPORT}/client_golang \
-           git://github.com/prometheus/common;protocol=https;branch=master;name=common;destsuffix=${PN}-${PV}/src/${GO_IMPORT}/common \
+SRC_URI = "git://github.com/prometheus/client_golang;protocol=https;branch=master;name=client_golang;destsuffix=${BPN}-${PV}/src/${GO_IMPORT}/client_golang \
+           git://github.com/prometheus/common;protocol=https;branch=master;name=common;destsuffix=${BPN}-${PV}/src/${GO_IMPORT}/common \
           "
 SRCREV_client_golang = "08fd2e12372a66e68e30523c7642e0cbc3e4fbde" 
 SRCREV_common = "9e0844febd9e2856f839c9cb974fbd676d1755a8" 

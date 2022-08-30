@@ -4,7 +4,7 @@ GO_IMPORT = "github.com/rakyll/statik"
 
 inherit go
 
-SRC_URI = "git://github.com/rakyll/statik;protocol=https;branch=master;destsuffix=${PN}-${PV}/src/${GO_IMPORT}"
+SRC_URI = "git://github.com/rakyll/statik;protocol=https;branch=master;destsuffix=${BPN}-${PV}/src/${GO_IMPORT}"
 
 SRCREV = "e383bbf6b2ec1a2fb8492dfd152d945fb88919b6"
 LICENSE = "Apache-2.0"

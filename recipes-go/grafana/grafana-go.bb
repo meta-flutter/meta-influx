@@ -3,7 +3,7 @@ inherit go
 
 DESCRIPTION = "Grafana Go Backend"
 GO_IMPORT = "${REPO}"
-SRC_URI = "git://${REPO};protocol=https;branch=main;destsuffix=${PN}-${PV}/src/${GO_IMPORT}"
+SRC_URI = "git://${REPO};protocol=https;branch=main;destsuffix=${BPN}-${PV}/src/${GO_IMPORT}"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE.md;md5=${LIC_CHKSUM}"
 
 FILES:${PN} += "${GOBIN_FINAL}/*"
