@@ -17,6 +17,6 @@ SRCREV_protobuf = "2bba0603135d7d7f5cb73b2125beeda19c09f4ef"
 
 inherit go
 
-do_install_append_class-target() {
+do_install:append:class-target() {
 	find "${D}${GOROOT_FINAL}" \( -name \*.sh -o -name \*.bash \) -delete
 }

@@ -9,7 +9,7 @@ SRCREV = "95e1ad7791bdbca44707fedbb29be42024900d9c"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=4ffbf8936902d1fffb5a954a5dde4eb5"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 GO_INSTALL = "\
     ${GO_IMPORT} \
@@ -25,6 +25,6 @@ DEPENDS += "\
             github.com-yuin-gopher-lua \
             "
             
-RDEPENDS_${PN}-staticdev += "\
+RDEPENDS:${PN}-staticdev += "\
                              bash \
                              "            

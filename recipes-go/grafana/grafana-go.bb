@@ -3,10 +3,10 @@ inherit go
 
 DESCRIPTION = "Grafana Go Backend"
 GO_IMPORT = "${REPO}"
-SRC_URI = "git://${REPO};protocol=https;destsuffix=${PN}-${PV}/src/${GO_IMPORT}"
+SRC_URI = "git://${REPO};protocol=https;branch=main;destsuffix=${PN}-${PV}/src/${GO_IMPORT}"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE.md;md5=${LIC_CHKSUM}"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 
 DEPENDS+= "\
@@ -21,7 +21,7 @@ DEPENDS+= "\
 GO_INSTALL = "\
       ${GO_IMPORT}/pkg/...  \
 "
-RDEPENDS_${PN}-staticdev += "\
+RDEPENDS:${PN}-staticdev += "\
                              bash \
                              expect \
                             "

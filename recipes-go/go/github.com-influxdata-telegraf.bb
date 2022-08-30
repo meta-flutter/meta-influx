@@ -9,7 +9,7 @@ SRCREV = "b968759d1015f47bf60de5ec05e762a994692110"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=10a23e7a514f23f0930e1a4254936534"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS +="\
     collectd\
@@ -55,6 +55,6 @@ DEPENDS +="\
     gopkg.in-olivere-elastic.v5\
 "
 
-RDEPENDS_${PN}-staticdev += "bash \
+RDEPENDS:${PN}-staticdev += "bash \
                              python \
                              "

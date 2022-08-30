@@ -15,4 +15,4 @@ GO_INSTALL = "\
     ${GO_IMPORT}/hooks/... \
     "
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"

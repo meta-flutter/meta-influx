@@ -9,7 +9,7 @@ SRCREV = "dc4743023d0c166c1b844da8fc688e57ec65fe0b"
 LICENSE = "PD"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=605b9ee741fb194674b08ff2532e52b1"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS+="\
     github.com-yuin-gopher-lua \

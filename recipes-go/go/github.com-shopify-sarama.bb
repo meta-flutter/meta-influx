@@ -9,7 +9,7 @@ SRCREV = "46dabe0f34a162d428640a0e9714eea9079e7ee2"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=08a9a8182981c4db69e7e7bae5edc2e7"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS+="\
     github.com-eapache-go-resiliency\

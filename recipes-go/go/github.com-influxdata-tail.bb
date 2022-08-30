@@ -9,4 +9,4 @@ SRCREV = "e9ef7e826dafcb3093b40b989fefa90eeb9a8ca1"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE.txt;md5=0bdce43b16cd5c587124d6f274632c87"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"

@@ -9,7 +9,7 @@ SRCREV = "bb955e01b9346ac19dc29eb16586c90ded99a98c"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=dcb7929be2a0ff22ad39f869509911d7"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS +="\
     github.com-golang-snappy \

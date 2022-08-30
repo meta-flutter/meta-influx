@@ -9,4 +9,4 @@ SRCREV = "###COMMIT###"
 LICENSE = "###LIC###"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/###LICFILE###;md5=###LICMD5###"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"

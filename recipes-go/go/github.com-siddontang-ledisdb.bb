@@ -9,7 +9,7 @@ SRCREV = "5835ab9b2b80e1e3f7dd31b7526836c4a0cbf8b2"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=21a1f824fde7349d4bfd361e2e0bff4d"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 #github.com/syndtr/goleveldb/leveldb
 
@@ -26,6 +26,6 @@ DEPENDS+="\
     github.com-ugorji-go \  
 "   
 
-RDEPENDS_${PN}-staticdev += "\
+RDEPENDS:${PN}-staticdev += "\
                              bash \
                             "

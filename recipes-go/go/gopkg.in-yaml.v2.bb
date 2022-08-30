@@ -9,4 +9,4 @@ SRCREV = "cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=6964839e54f4fefcdae13f22b92d0fbb"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"

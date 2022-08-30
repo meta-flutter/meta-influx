@@ -9,7 +9,7 @@ SRCREV = "fc1ef06ad4af0da31cdb87e3fa5ec084c67e6597"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=21a1f824fde7349d4bfd361e2e0bff4d"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS+="\
     github.com-siddontang-go-snappy \
@@ -20,6 +20,6 @@ DEPENDS+="\
     github.com-burntsushi-toml \
     github.com-ugorji-go \   
 "
-RDEPENDS_${PN}-staticdev += "\
+RDEPENDS:${PN}-staticdev += "\
                              bash \
                             "

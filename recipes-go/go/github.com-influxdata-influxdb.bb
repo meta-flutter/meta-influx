@@ -9,7 +9,7 @@ SRCREV = "9d83e4626d2f190bbd421baea1673e666e759221"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=ba8146ad9cc2a128209983265136e06a"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS +="\
     collectd\
@@ -38,7 +38,7 @@ DEPENDS +="\
     github.com-rakyll-statik\
 "
 
-RDEPENDS_${PN}-staticdev += "\
+RDEPENDS:${PN}-staticdev += "\
                              bash \
                              python \
                              "

@@ -9,7 +9,7 @@ SRCREV = "ffe5510c6fa5e15e6d983210ab501c815b56b363"
 LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE.txt;md5=591778525c869cdde0ab5a1bf283cd81"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 GO_INSTALL = "\
     ${GO_IMPORT} \

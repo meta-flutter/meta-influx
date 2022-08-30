@@ -40,12 +40,12 @@ DEPENDS = "\
 
 #### FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
-SRC_URI = "git://github.com/grpc/grpc-go.git;protocol=https;name=grpc;destsuffix=${PN}-${PV}/src/${GO_IMPORT_GRPC}     \
-           git://github.com/google/go-genproto.git;protocol=https;name=genproto;destsuffix=${PN}-${PV}/src/${GO_IMPORT_GENPROTO} \
-           git://github.com/googleapis/gax-go.git;protocol=https;name=gaxgo;destsuffix=${PN}-${PV}/src/${GO_IMPORT_GAX_GO}   \
-           git://github.com/golang/oauth2.git;protocol=https;name=oauth2;destsuffix=${PN}-${PV}/src/${GO_IMPORT_OAUTH2}   \ 
-           git://github.com/google/google-api-go-client;protocol=https;name=api;destsuffix=${PN}-${PV}/src/${GO_IMPORT_API} \  
-           git://code.googlesource.com/gocloud;protocol=https;name=cloud;destsuffix=${PN}-${PV}/src/${GO_IMPORT_CLOUD}    \
+SRC_URI = "git://github.com/grpc/grpc-go.git;protocol=https;branch=main;name=grpc;destsuffix=${PN}-${PV}/src/${GO_IMPORT_GRPC}     \
+           git://github.com/google/go-genproto.git;protocol=https;branch=main;name=genproto;destsuffix=${PN}-${PV}/src/${GO_IMPORT_GENPROTO} \
+           git://github.com/googleapis/gax-go.git;protocol=https;branch=main;name=gaxgo;destsuffix=${PN}-${PV}/src/${GO_IMPORT_GAX_GO}   \
+           git://github.com/golang/oauth2.git;protocol=https;branch=main;name=oauth2;destsuffix=${PN}-${PV}/src/${GO_IMPORT_OAUTH2}   \ 
+           git://github.com/google/google-api-go-client;branch=main;protocol=https;name=api;destsuffix=${PN}-${PV}/src/${GO_IMPORT_API} \  
+           git://code.googlesource.com/gocloud;branch=main;protocol=https;name=cloud;destsuffix=${PN}-${PV}/src/${GO_IMPORT_CLOUD}    \
            "
 
 GO_INSTALL = "\
@@ -73,15 +73,15 @@ SRCREV_cloud =   "1ec09e65be459e9a0c9014ff8e4591d8c2f1bed6"
 SRCREV_gaxgo =   "9af46dd5a1713e8b5cd71106287eba3cefdde50b"
 SRCREV_api   =   "16ab375f94503bfa0d19db78e96bffbe1a34354f"
 
-RDEPENDS_${PN}-staticdev += "bash"
+RDEPENDS:${PN}-staticdev += "bash"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
-FILES_${PN} += "${GOBIN_FINAL}/${GO_IMPORT_GRPC}/*"
-FILES_${PN} += "${GOBIN_FINAL}/${GO_IMPORT_OAUTH2}/*"
-FILES_${PN} += "${GOBIN_FINAL}/${GO_IMPORT_GENPROTO}/*"
-FILES_${PN} += "${GOBIN_FINAL}/${GO_IMPORT_CLOUD}/*"
-FILES_${PN} += "${GOBIN_FINAL}/${GO_IMPORT_GAX_GO}/*"
-FILES_${PN} += "${GOBIN_FINAL}/${GO_IMPORT_API}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/${GO_IMPORT_GRPC}/*"
+FILES:${PN} += "${GOBIN_FINAL}/${GO_IMPORT_OAUTH2}/*"
+FILES:${PN} += "${GOBIN_FINAL}/${GO_IMPORT_GENPROTO}/*"
+FILES:${PN} += "${GOBIN_FINAL}/${GO_IMPORT_CLOUD}/*"
+FILES:${PN} += "${GOBIN_FINAL}/${GO_IMPORT_GAX_GO}/*"
+FILES:${PN} += "${GOBIN_FINAL}/${GO_IMPORT_API}/*"
 
 
 

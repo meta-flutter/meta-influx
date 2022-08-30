@@ -9,7 +9,7 @@ SRCREV = "b84338d7d62598f75859b2b146d830b22f1b9ec8"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=b34e77cc03aa5b5b612b330ce5bd2c2a"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS+="\
     gopkg.in-inconshreveable-log15.v2 \

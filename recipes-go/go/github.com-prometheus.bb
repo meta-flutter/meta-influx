@@ -15,7 +15,7 @@ LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/client_golang/LICENSE;md5=86d3f3a95c
                     file://src/${GO_IMPORT}/common/LICENSE;md5=86d3f3a95c324c9479bd8986968f4327 \
                     "
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS +="\
             github.com-julienschmidt-httprouter \

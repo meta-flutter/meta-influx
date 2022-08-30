@@ -9,9 +9,9 @@ SRCREV = "a53d495e81424aaf7a7665a9d32a97715c40e953"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=838c366f69b72c5df05c96dff79b35f2"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 
-RDEPENDS_${PN}-staticdev += "\
+RDEPENDS:${PN}-staticdev += "\
                             bash \
                             "

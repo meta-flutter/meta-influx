@@ -13,4 +13,4 @@ GO_INSTALL = "\
     ${GO_IMPORT} \
     "
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"

@@ -9,7 +9,7 @@ SRCREV = "bf0e31aeedfea7fb13f821e0831cfe2b5974d1e9"
 LICENSE = "ISC"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=51e2bb425ba79cdbe97889a28f47eea8"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS+="\
     github.com-golang-protobuf \

@@ -20,5 +20,5 @@ PROVIDES +="github.com-docker-docker"
 GO_INSTALL = "\
     ${GO_IMPORT}/api/... \
     "
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
     

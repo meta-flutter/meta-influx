@@ -9,7 +9,7 @@ SRCREV = "bc265fedb9ff5b5c5d3c0fdcef4a819b3523d3ee"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=ec355810d8dea8f1fbc32d149f397ceb"
 
-FILES_${PN} += "${GOBIN_FINAL}/*"
+FILES:${PN} += "${GOBIN_FINAL}/*"
 
 DEPENDS+="\
     github.com-shopify-sarama \
