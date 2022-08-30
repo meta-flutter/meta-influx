@@ -10,7 +10,7 @@ DEPENDS = "golang.org-x-net"
 GO_IMPORT = "github.com/golang/protobuf"
 
 SRC_URI = "\
-	git://github.com/golang/protobuf.git;protocol=https;name=protobuf;destsuffix=${PN}-${PV}/src/${GO_IMPORT} \
+	git://github.com/golang/protobuf.git;protocol=https;name=protobuf;branch=master;destsuffix=${PN}-${PV}/src/${GO_IMPORT} \
 	"
 
 SRCREV_protobuf = "2bba0603135d7d7f5cb73b2125beeda19c09f4ef"

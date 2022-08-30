@@ -21,12 +21,13 @@ PROVIDES += "\
 
 inherit go
 
-SRC_URI="git://github.com/couchbase/cbauth;protocol=https;name=cbauth;destsuffix=${PN}-${PV}/src/github.com/couchbase/cbauth \
-         git://github.com/couchbase/go-couchbase;protocol=https;name=gocouchbase;destsuffix=${PN}-${PV}/src/github.com/couchbase/go-couchbase \
-         git://github.com/couchbase/gomemcached;protocol=https;name=gomemcached;destsuffix=${PN}-${PV}/src/github.com/couchbase/gomemcached \
-         git://github.com/couchbase/goutils;protocol=https;name=goutils;destsuffix=${PN}-${PV}/src/github.com/couchbase/goutils \
-         git://github.com/couchbase/go_n1ql;name=gon1ql;protocol=https;destsuffix=${PN}-${PV}/src/github.com/couchbase/go_n1ql \
-        "
+SRC_URI = "\
+    git://github.com/couchbase/cbauth;protocol=https;branch=master;name=cbauth;destsuffix=${PN}-${PV}/src/github.com/couchbase/cbauth \
+    git://github.com/couchbase/go-couchbase;protocol=https;branch=master;name=gocouchbase;destsuffix=${PN}-${PV}/src/github.com/couchbase/go-couchbase \
+    git://github.com/couchbase/gomemcached;protocol=https;branch=master;name=gomemcached;destsuffix=${PN}-${PV}/src/github.com/couchbase/gomemcached \
+    git://github.com/couchbase/goutils;protocol=https;branch=master;name=goutils;destsuffix=${PN}-${PV}/src/github.com/couchbase/goutils \
+    git://github.com/couchbase/go_n1ql;branch=master;name=gon1ql;protocol=https;destsuffix=${PN}-${PV}/src/github.com/couchbase/go_n1ql \
+    "
         
 SRCREV_cbauth = "7033a1743a2dac093e1f4707f2ae465f1fc4f21b"
 SRCREV_gocouchbase = "67035e75f58e66670b74d7eae1c52f5c9babc105" 

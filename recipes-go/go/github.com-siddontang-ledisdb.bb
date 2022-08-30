@@ -4,7 +4,7 @@ GO_IMPORT = "github.com/siddontang/ledisdb"
 
 inherit go
 
-SRC_URI = "git://github.com/siddontang/ledisdb;protocol=https;destsuffix=${PN}-${PV}/src/${GO_IMPORT}"
+SRC_URI = "git://github.com/siddontang/ledisdb;protocol=https;branch=master;destsuffix=${PN}-${PV}/src/${GO_IMPORT}"
 SRCREV = "5835ab9b2b80e1e3f7dd31b7526836c4a0cbf8b2" 
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://src/${GO_IMPORT}/LICENSE;md5=21a1f824fde7349d4bfd361e2e0bff4d"
