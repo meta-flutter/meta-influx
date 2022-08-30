@@ -18,27 +18,8 @@ SRCREV_crypto = "cbc3d0884eac986df6e78a039b8792e869bff863"
 SRCREV_text = "f4b4367115ec2de254587813edaa901bc1c723a8"
 
 GO_IMPORT = "golang.org/x"
-GO_INSTALL = "\
-    ${GO_IMPORT}/net/... \
-    ${GO_IMPORT}/crypto/... \
-    ${GO_IMPORT}/text/cases/... \
-    ${GO_IMPORT}/text/collate/... \
-    ${GO_IMPORT}/text/currency/... \
-    ${GO_IMPORT}/text/encoding/... \
-    ${GO_IMPORT}/text/internal/... \
-    ${GO_IMPORT}/text/language/... \
-    ${GO_IMPORT}/text/message/... \
-    ${GO_IMPORT}/text/runes/... \
-    ${GO_IMPORT}/text/search/... \
-    ${GO_IMPORT}/text/secure/... \
-    ${GO_IMPORT}/text/transform/... \
-    ${GO_IMPORT}/text/unicode/... \
-    ${GO_IMPORT}/text/width/... \
-"
 
-PROVIDES += "\
-    golang.org-x-crypto \
-    golang.org-x-text \
-    "
+PROVIDES += "golang.org-x-crypto"
+PROVIDES += "golang.org-x-text"
 
 inherit go
